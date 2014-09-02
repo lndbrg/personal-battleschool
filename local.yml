@@ -6,4 +6,4 @@
       debug: msg="in local"
 
     - name: tap cask
-      homebrew_tap: caskroom/cask
+      homebrew_tap: tap=caskroom/cask
