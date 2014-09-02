@@ -1,19 +1,9 @@
 ---
 - hosts: workstation
-  gather_facts: no           
-  sudo: no
-  vars:
-    homebrew_cask_packages_packages:
-      - atom
-      - calibre
-      - firefox
-      - google-chrome
-      - iterm2
-      - java
-      - kindle
-      - skype
-      - vagrant
-      - virtualbox
-  roles:
-    - hnakamur.homebrew-cask-packages
 
+  tasks:
+    - name: print from playbook
+      debug: msg="in local"
+
+    - name: tap cask
+      homebrew_tap: caskroom/cask

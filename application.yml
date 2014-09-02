@@ -1,0 +1,20 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: print from playbook
+      debug: msg="in application"
+
+    - name: tap cask
+      homebrew_tap: caskroom/cask
+
+    - name: install casks
+      homebrew_cask name={{cask}}
+      sudo: no
+      with_items:
+         - cask: atom 
+         - cask: calibre
+         - cask: firefox
+         - cask: google-chrome
+         - cask: skype
+         - cask: pycharm
