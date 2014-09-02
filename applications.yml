@@ -27,7 +27,11 @@
          - google-chrome
          - skype
          - pycharm
-         - sublime-text-3
-         - google-hangouts
          - lastpass-universal
          - mou
+
+    - name: install sudo casks
+      homebrew_cask: name={{item}}
+      sudo: yes
+      with_items:
+         - google-hangouts
