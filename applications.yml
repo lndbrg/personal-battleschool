@@ -15,6 +15,7 @@
           - wget
           - pyenv
           - the_silver_searcher
+          - brew-cask
 
     - name: install casks
       homebrew_cask: name={{item}}
