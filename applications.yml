@@ -17,10 +17,10 @@
           - the_silver_surfer
 
     - name: tap cask
-      homebrew_tap: caskroom/cask
+      homebrew_tap: cask=caskroom/cask
 
     - name: install casks
-      homebrew_cask name={{item}}
+      homebrew_cask: name={{item}}
       sudo: no
       with_items:
          - atom
