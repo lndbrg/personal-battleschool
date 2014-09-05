@@ -5,6 +5,9 @@
     - name: print from playbook
       debug: msg="in application"
 
+    - name: upgrade homebrew and packages
+      homebrew: update_homebrew=yes upgrade_all=yes
+
     - name: install apps from homebrew
       homebrew: name={{item}} state=present
       with_items:
