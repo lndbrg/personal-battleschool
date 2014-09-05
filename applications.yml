@@ -29,6 +29,7 @@
          - pycharm
          - lastpass-universal
          - mou
+         - spotify
 
     - name: install sudo casks
       homebrew_cask: name={{item}}
