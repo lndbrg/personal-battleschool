@@ -19,6 +19,7 @@
           - git
           - nmap
           - pyenv
+          - pyenv-virtualenvwrapper
           - rbenv
           - rust
           - ssh-copy-id
