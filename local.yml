@@ -7,3 +7,6 @@
 
     - name: tap cask
       homebrew_tap: tap=caskroom/cask
+
+    - name: fix shell
+      user: name={{ lookup('env','USER') }} shell=/usr/local/bin/bash
